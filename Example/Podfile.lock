@@ -1,0 +1,16 @@
+PODS:
+  - DTApplicationUpdateManager (0.1.0)
+
+DEPENDENCIES:
+  - DTApplicationUpdateManager (from `../`)
+
+EXTERNAL SOURCES:
+  DTApplicationUpdateManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DTApplicationUpdateManager: 29724eb5c4a373b13e7285da098bd631a3bb75c5
+
+PODFILE CHECKSUM: f0b7029f51a86b5a16770c948a66bb1b880f0ad2
+
+COCOAPODS: 1.4.0

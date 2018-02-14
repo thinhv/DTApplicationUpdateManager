@@ -1,0 +1,6 @@
+framework module Pods_DTApplicationUpdateManager_Example {
+  umbrella header "Pods-DTApplicationUpdateManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

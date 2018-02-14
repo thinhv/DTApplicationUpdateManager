@@ -1,0 +1,22 @@
+{
+  "name": "DTApplicationUpdateManager",
+  "version": "0.1.0",
+  "summary": "A short description of DTApplicationUpdateManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/thinhv@metropolia.fi/DTApplicationUpdateManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "thinhv@metropolia.fi": "ducthinh2410@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/thinhv@metropolia.fi/DTApplicationUpdateManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DTApplicationUpdateManager/Classes/**/*"
+}

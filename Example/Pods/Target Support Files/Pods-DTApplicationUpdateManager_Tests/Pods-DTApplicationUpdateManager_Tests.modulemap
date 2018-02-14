@@ -1,0 +1,6 @@
+framework module Pods_DTApplicationUpdateManager_Tests {
+  umbrella header "Pods-DTApplicationUpdateManager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
