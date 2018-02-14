@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DTApplicationUpdateManager'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DTApplicationUpdateManager.'
+  s.summary          = 'A simple manager which checks if there is any newer app\'s version available in the AppStore.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Whenever you roll out a new version to the AppStore, you might want the user to update to that newly released version. DTApplicationUpdateManager helps to let the app notified about the new version. If the uesr ignored that version, DTApplicationUpdateManager is still able to remind in the next time in a flexible way.
                        DESC
 
-  s.homepage         = 'https://github.com/thinhv@metropolia.fi/DTApplicationUpdateManager'
+  s.homepage         = 'https://github.com/ducthinh2410/DTApplicationUpdateManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'thinhv@metropolia.fi' => 'ducthinh2410@gmail.com' }
-  s.source           = { :git => 'https://github.com/thinhv@metropolia.fi/DTApplicationUpdateManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ducthinh2410/DTApplicationUpdateManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

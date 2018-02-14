@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "DTApplicationUpdateManager.h"
 
 FOUNDATION_EXPORT double DTApplicationUpdateManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char DTApplicationUpdateManagerVersionString[];

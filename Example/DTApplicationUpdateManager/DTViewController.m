@@ -7,6 +7,7 @@
 //
 
 #import "DTViewController.h"
+#import <DTApplicationUpdateManager/DTApplicationUpdateManager.h>
 
 @interface DTViewController ()
 

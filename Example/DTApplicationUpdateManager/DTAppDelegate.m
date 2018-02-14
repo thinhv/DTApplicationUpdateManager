@@ -2,17 +2,25 @@
 //  DTAppDelegate.m
 //  DTApplicationUpdateManager
 //
-//  Created by thinhv@metropolia.fi on 02/14/2018.
-//  Copyright (c) 2018 thinhv@metropolia.fi. All rights reserved.
+//  Created by Thinh Vo on 02/14/2018.
 //
 
 #import "DTAppDelegate.h"
+#import "DTApplicationUpdateManager.h"
+
+@interface DTAppDelegate() <DTApplicationUpdateManagerDelegate>
+@end
 
 @implementation DTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // Check for updates
+    [[DTApplicationUpdateManager sharedInstance] checkForNewAppVersionWithReminderRoutineType:DTApplicationUpdateRoutineTypeEverySecond];
+    [DTApplicationUpdateManager sharedInstance].delegate = self;
+    
     return YES;
 }
 
@@ -41,6 +49,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - DFApplicationUpdateManagerDelegate
+- (void)applicationUpdateManager:(DTApplicationUpdateManager *)applicationUpdateManager shouldDisplayNewVersionUpdateAlertWithInformation:(DTApplicationItunesInformation *)updateInformation
+{
+    // Display the alert if neccessary
+    
 }
 
 @end
